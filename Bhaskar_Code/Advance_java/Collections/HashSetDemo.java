@@ -1,4 +1,4 @@
-import java.util.HashSet;
+
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
@@ -13,7 +13,7 @@ public class HashSetDemo {
         datas.add(16);
         datas.add(1);
 
-        Iterator iterator = datas.iterator();
+        Iterator<Integer> iterator = datas.iterator();
 
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
