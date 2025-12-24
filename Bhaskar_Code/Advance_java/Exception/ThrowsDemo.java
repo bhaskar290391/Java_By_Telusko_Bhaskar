@@ -1,28 +1,29 @@
+class A {
+    public void show() throws ClassNotFoundException{
+
+        //Class.forName("ThrowsDemo");
+        Class.forName("ThrowsDemosss");
+    }
+}
+
 public class ThrowsDemo {
-    public static void main(String[] args) {
-        
+public static void main(String[] args) {
+    A obj =new A();
+
+   
 
         int i=16;
         int j=0;
 
         try {
-            j=15/i;
-            if(j==0){
-                throw new ArithmeticException("I dont want to print exception");
-            }
-           
-
-        }catch(ArithmeticException e){
-            j=15;
-           System.out.println("This is default value of j "+e);
-        }catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("Be in your limit");
-        }catch (Exception e) {
-            System.out.println("Something went wrong"+e);
+             obj.show();
+        }catch(ClassNotFoundException e){
+            System.out.println("Class Not found Exception");
         }
-
+        
         System.out.println(j);
 
         System.out.println("bye");
 }
+     
 }
