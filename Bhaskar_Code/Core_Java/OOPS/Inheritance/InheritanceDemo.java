@@ -19,13 +19,14 @@ class AdvanceCalc extends Calc{
 }
 public class InheritanceDemo{
     public static void main(String[] args) {
-        AdvanceCalc adv=new AdvanceCalc();
-
+        
+        //AdvanceCalc adv=new AdvanceCalc();
+        ScientificCalc adv=new ScientificCalc();
         int r1=adv.add(4, 4);
                 int r2=adv.sub(5, 4);
                         int r3=adv.multi(4, 8);
                                 int r4=adv.add(10, 4);
-
-    System.out.println(r1+" : "+r2+" : "+ r3+" : "+ r4);
+double r5= adv.power(4);
+    System.out.println(r1+" : "+r2+" : "+ r3+" : "+ r4+" :"+r5);
     }
 }
