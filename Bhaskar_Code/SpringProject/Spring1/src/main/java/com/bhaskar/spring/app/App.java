@@ -30,6 +30,6 @@ public class App
 //
 //        System.out.println( "Hello World!" );
 
-        Desktop d=context.getBean(Desktop.class);
+        //Desktop d=context.getBean(Desktop.class);
     }
 }

@@ -21,6 +21,13 @@
 
         <property name="age" value="29" />
 <!--        <property name="computer" ref="desk" />-->
+
+        <property name="computer" >
+            <bean id="lap" class="com.bhaskar.spring.app.Laptop" primary="true">
+
+            </bean>
+        </property>
+
         <property name="salary" value="2903" />
 
 
@@ -50,11 +57,11 @@
     </bean>
 
 
-    <bean id="lap" class="com.bhaskar.spring.app.Laptop" primary="true">
+<!--    <bean id="lap" class="com.bhaskar.spring.app.Laptop" primary="true">-->
 
-    </bean>
+<!--    </bean>-->
 
-    <bean id="desk" class="com.bhaskar.spring.app.Desktop"  lazy-init="true">
+<!--    <bean id="desk" class="com.bhaskar.spring.app.Desktop"  lazy-init="true">-->
 
-    </bean>
+<!--    </bean>-->
 </beans>
