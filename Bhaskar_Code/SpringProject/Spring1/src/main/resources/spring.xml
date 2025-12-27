@@ -9,4 +9,7 @@
 
     </bean>
 
+    <bean id="laptop" class="com.bhaskar.spring.app.Laptop">
+
+    </bean>
 </beans>
