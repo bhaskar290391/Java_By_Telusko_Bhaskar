@@ -17,7 +17,7 @@ public class SpringBootDemoApplication {
         //Getting Alien object
         Laptop obj=context.getBean(Laptop.class);
 		service.addLaptop(obj);
-        
+
 
 	}
 
