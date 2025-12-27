@@ -5,22 +5,22 @@ import java.beans.ConstructorProperties;
 public class Alien {
 
     private int age;
-    private Laptop laptop;
+    private Computer computer;
     private Double salary;
 
     @ConstructorProperties({"age","laptop","salary"})
-    public Alien(int age, Laptop laptop, Double salary) {
+    public Alien(int age, Computer computer, Double salary) {
         this.age = age;
-        this.laptop = laptop;
+        this.computer = computer;
         this.salary = salary;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getLaptop() {
+        return computer;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setLaptop(Computer computer) {
+        this.computer = computer;
     }
 
     public int getAge() {
@@ -45,6 +45,6 @@ public class Alien {
 
     public void code(){
         System.out.println("Coding..");
-        laptop.compile();
+        computer.compile();
     }
 }

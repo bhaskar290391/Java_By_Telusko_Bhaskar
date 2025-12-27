@@ -1,13 +1,14 @@
 package com.bhaskar.spring.app;
 
-public class Laptop {
+public class Laptop implements Computer {
     public Laptop() {
         System.out.println("Laptop Object is created");
 
 
     }
 
+    @Override
     public void compile(){
-        System.out.println("Compiling");
+        System.out.println("Compiling.. By Laptop");
     }
 }

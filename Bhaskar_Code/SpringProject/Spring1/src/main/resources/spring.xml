@@ -17,13 +17,19 @@
 -->
 
 
-    <bean id="alien" class="com.bhaskar.spring.app.Alien">
+    <bean id="alien" class="com.bhaskar.spring.app.Alien" autowire="byType">
+
+        <property name="age" value="29" />
+        <property name="salary" value="2903" />
+
+
+
 
     <!-- Based On index variable  -->
-        
-        <constructor-arg index="1" ref="lap"/>
-        <constructor-arg index="0" value="29" />
-        <constructor-arg index="2" value="2903" />
+
+<!--        <constructor-arg index="1" ref="lap"/>-->
+<!--        <constructor-arg index="0" value="29" />-->
+<!--        <constructor-arg index="2" value="2903" />-->
 
 
     <!-- Based on constructor poroperties which does not require sequence  only name attributes-->
@@ -45,4 +51,8 @@
     <bean id="lap" class="com.bhaskar.spring.app.Laptop">
 
     </bean>
+
+<!--    <bean id="desk" class="com.bhaskar.spring.app.Desktop">-->
+
+<!--    </bean>-->
 </beans>
