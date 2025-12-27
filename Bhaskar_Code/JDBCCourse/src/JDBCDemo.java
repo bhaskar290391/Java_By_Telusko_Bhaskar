@@ -12,16 +12,15 @@ public class JdbcDemo {
         System.out.println("Connection Established");
         Statement st=con.createStatement();
 
-        String sql="select sname from student where sid=1";
+        String sql="select * from student ";
 
         ResultSet rs=st.executeQuery(sql);
 
-        rs.next();
-
-        String sname =rs.getString("sname");
-
-        System.out.println("The student name is "+ sname);
-
+        while(rs.next()){
+            System.out.print(rs.getInt(1)+" - ");
+            System.out.print(rs.getString(2)+" - ");
+            System.out.println(rs.getInt(3));
+        }
         con.close();
 
 
