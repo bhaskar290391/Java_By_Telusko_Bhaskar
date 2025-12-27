@@ -8,8 +8,9 @@
 <!--     <bean id="alien" class="com.bhaskar.spring.app.Alien" scope="prototype"> </bean>-->
     <bean id="alien" class="com.bhaskar.spring.app.Alien">
         <property name="age" value="29"></property>
+        <property name="laptop" ref="lap"></property>
     </bean>
-    <bean id="laptop" class="com.bhaskar.spring.app.Laptop">
+    <bean id="lap" class="com.bhaskar.spring.app.Laptop">
 
     </bean>
 </beans>

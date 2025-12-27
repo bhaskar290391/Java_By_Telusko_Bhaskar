@@ -2,7 +2,17 @@ package com.bhaskar.spring.app;
 
 public class Alien {
 
-    int age;
+    private int age;
+    private Laptop laptop;
+
+
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
 
     public int getAge() {
         return age;
@@ -18,5 +28,6 @@ public class Alien {
 
     public void code(){
         System.out.println("Coding..");
+        laptop.compile();
     }
 }
