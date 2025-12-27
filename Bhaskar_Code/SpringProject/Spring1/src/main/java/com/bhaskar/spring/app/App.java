@@ -13,7 +13,8 @@ public class App
     {
         ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
         Alien obj= (Alien) context.getBean("alien");
-        System.out.println(obj.getAge());
+        System.out.println("Age ==> " +obj.getAge());
+        System.out.println("Salary ==>"+obj.getSalary());
         obj.code();
 
 //        Alien obj1= (Alien) context.getBean("alien");

@@ -5,11 +5,43 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
+<!--   Prototype scope -->
 <!--     <bean id="alien" class="com.bhaskar.spring.app.Alien" scope="prototype"> </bean>-->
+
+<!--    Setter injection-->
+    <!--
     <bean id="alien" class="com.bhaskar.spring.app.Alien">
         <property name="age" value="29"></property>
         <property name="laptop" ref="lap"></property>
     </bean>
+-->
+
+
+    <bean id="alien" class="com.bhaskar.spring.app.Alien">
+
+    <!-- Based On index variable  -->
+        
+        <constructor-arg index="1" ref="lap"/>
+        <constructor-arg index="0" value="29" />
+        <constructor-arg index="2" value="2903" />
+
+
+    <!-- Based on constructor poroperties which does not require sequence  only name attributes-->
+        <!--
+        <constructor-arg name="laptop" ref="lap"/>
+        <constructor-arg name="age" value="29" />
+        <constructor-arg name="salary" value="2903" />
+        -->
+
+        <!-- Based on type only applicable for if distinct type-->
+    <!--
+        <constructor-arg type="com.bhaskar.spring.app.Laptop" ref="lap"/>
+        <constructor-arg type="int" value="29" />
+        <constructor-arg type="Double" value="2903" />
+        -->
+    </bean>
+
+
     <bean id="lap" class="com.bhaskar.spring.app.Laptop">
 
     </bean>
