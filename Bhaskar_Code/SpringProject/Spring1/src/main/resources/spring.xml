@@ -25,6 +25,7 @@
 
 
 
+
     <!-- Based On index variable  -->
 
 <!--        <constructor-arg index="1" ref="lap"/>-->
@@ -32,7 +33,7 @@
 <!--        <constructor-arg index="2" value="2903" />-->
 
 
-    <!-- Based on constructor poroperties which does not require sequence  only name attributes-->
+    <!-- Based on constructor properties which does not require sequence  only name attributes-->
         <!--
         <constructor-arg name="laptop" ref="lap"/>
         <constructor-arg name="age" value="29" />
@@ -52,7 +53,7 @@
 
     </bean>
 
-<!--    <bean id="desk" class="com.bhaskar.spring.app.Desktop">-->
+    <bean id="desk" class="com.bhaskar.spring.app.Desktop" primary="true">
 
-<!--    </bean>-->
+    </bean>
 </beans>
