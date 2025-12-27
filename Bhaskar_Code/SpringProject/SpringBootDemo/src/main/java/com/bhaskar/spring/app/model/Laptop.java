@@ -1,4 +1,4 @@
-package com.bhaskar.spring.app;
+package com.bhaskar.spring.app.model;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;

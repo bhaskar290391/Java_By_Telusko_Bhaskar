@@ -1,4 +1,4 @@
-package com.bhaskar.spring.app;
+package com.bhaskar.spring.app.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

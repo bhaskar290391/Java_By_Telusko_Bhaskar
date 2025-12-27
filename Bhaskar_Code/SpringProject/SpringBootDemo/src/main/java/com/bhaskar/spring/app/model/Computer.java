@@ -1,4 +1,4 @@
-package com.bhaskar.spring.app;
+package com.bhaskar.spring.app.model;
 
 public interface Computer {
 
