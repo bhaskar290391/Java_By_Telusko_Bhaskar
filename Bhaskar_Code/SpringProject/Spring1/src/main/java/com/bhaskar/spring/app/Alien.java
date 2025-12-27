@@ -1,6 +1,9 @@
 package com.bhaskar.spring.app;
 
 public class Alien {
+
+    int age;
+
     public Alien() {
         System.out.println("Alien object is created");
     }
