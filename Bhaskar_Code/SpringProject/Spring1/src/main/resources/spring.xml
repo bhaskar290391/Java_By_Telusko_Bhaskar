@@ -20,6 +20,7 @@
     <bean id="alien" class="com.bhaskar.spring.app.Alien" autowire="byType">
 
         <property name="age" value="29" />
+        <property name="computer" ref="desk" />
         <property name="salary" value="2903" />
 
 
@@ -49,11 +50,11 @@
     </bean>
 
 
-    <bean id="lap" class="com.bhaskar.spring.app.Laptop">
+    <bean id="lap" class="com.bhaskar.spring.app.Laptop" primary="true">
 
     </bean>
 
-    <bean id="desk" class="com.bhaskar.spring.app.Desktop" primary="true">
+    <bean id="desk" class="com.bhaskar.spring.app.Desktop"  lazy-init="true">
 
     </bean>
 </beans>

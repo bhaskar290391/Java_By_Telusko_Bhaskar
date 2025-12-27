@@ -15,11 +15,11 @@ public class Alien {
         this.salary = salary;
     }
 
-    public Computer getLaptop() {
+    public Computer getComputer() {
         return computer;
     }
 
-    public void setLaptop(Computer computer) {
+    public void setComputer(Computer computer) {
         this.computer = computer;
     }
 
