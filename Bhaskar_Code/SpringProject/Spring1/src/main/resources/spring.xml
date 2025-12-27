@@ -20,7 +20,7 @@
     <bean id="alien" class="com.bhaskar.spring.app.Alien" autowire="byType">
 
         <property name="age" value="29" />
-        <property name="computer" ref="desk" />
+<!--        <property name="computer" ref="desk" />-->
         <property name="salary" value="2903" />
 
 

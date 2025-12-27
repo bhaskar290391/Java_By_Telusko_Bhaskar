@@ -12,7 +12,14 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
-        Alien obj= (Alien) context.getBean("alien");
+        //Getting object by bean id which provide object
+        //Alien obj= (Alien) context.getBean("alien");
+
+
+        //getting object by type
+        Alien obj=context.getBean("alien",Alien.class);
+
+
         System.out.println("Age ==> " +obj.getAge());
         System.out.println("Salary ==>"+obj.getSalary());
         obj.code();
@@ -22,5 +29,7 @@ public class App
 //        System.out.println(obj1.age);
 //
 //        System.out.println( "Hello World!" );
+
+        Desktop d=context.getBean(Desktop.class);
     }
 }
