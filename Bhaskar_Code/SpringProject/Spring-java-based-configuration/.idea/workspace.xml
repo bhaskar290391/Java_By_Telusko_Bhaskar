@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44529675-37c1-45e2-8a3b-fb4df336b98a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bhaskar/spring/app/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/src/main/java/com/bhaskar/spring/app/Alien.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/src/main/java/com/bhaskar/spring/app/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/src/main/java/com/bhaskar/spring/app/Computer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/src/main/java/com/bhaskar/spring/app/Desktop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/src/main/java/com/bhaskar/spring/app/Laptop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/src/main/resources/spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/src/test/java/com/bhaskar/spring/app/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/MavenDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Maven/MavenDemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/SpringBootDemo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +58,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Bhaskar_Learning_development/Java_By_Telusko_Bhaskar/Bhaskar_Code/SpringProject/Spring-java-based-configuration",
+    "last_opened_file_path": "D:/Bhaskar_Learning_and_Development/Udemy/Java_By_Telusko_Bhaskar/Bhaskar_Code/SpringProject/Spring-java-based-configuration",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -110,5 +99,13 @@
       <updated>1766814185108</updated>
     </task>
     <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
