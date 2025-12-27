@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44529675-37c1-45e2-8a3b-fb4df336b98a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Maven/MavenDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Maven/MavenDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/SpringBootDemo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-xml-confiruration/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhaskar/spring/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bhaskar/spring/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhaskar/spring/app/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bhaskar/spring/app/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
