@@ -16,13 +16,21 @@ public class App
 
     ApplicationContext context= new AnnotationConfigApplicationContext(AppConfig.class);
 
-    Desktop desktop = context.getBean("desktop",Desktop.class);
-    desktop.compile();
+        Alien obj1= context.getBean(Alien.class);
+        obj1.code();
+        System.out.println(obj1.getAge());
 
-    Desktop desktop1 = context.getBean("desktop",Desktop.class);
-    desktop1.compile();
 
-    System.out.println(desktop1 ==desktop);
+        Desktop desktop = context.getBean(Desktop.class);
+        desktop.compile();
+
+
+
+
+//    Desktop desktop1 = context.getBean(,Desktop.class);
+//    desktop1.compile();
+
+//    System.out.println(desktop1 ==desktop);
 
 
 
@@ -42,12 +50,7 @@ public class App
 //        System.out.println("Salary ==>"+obj.getSalary());
 //        obj.code();
 //
-////        Alien obj1= (Alien) context.getBean("alien");
-////        //obj1.code();
-////        System.out.println(obj1.age);
 ////
-////        System.out.println( "Hello World!" );
-//
-//        //Desktop d=context.getBean(Desktop.class);
+
     }
 }
