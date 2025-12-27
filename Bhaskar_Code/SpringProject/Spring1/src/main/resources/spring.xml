@@ -5,10 +5,10 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="alien" class="com.bhaskar.spring.app.Alien" scope="prototype">
-
+<!--     <bean id="alien" class="com.bhaskar.spring.app.Alien" scope="prototype"> </bean>-->
+    <bean id="alien" class="com.bhaskar.spring.app.Alien">
+        <property name="age" value="29"></property>
     </bean>
-
     <bean id="laptop" class="com.bhaskar.spring.app.Laptop">
 
     </bean>
