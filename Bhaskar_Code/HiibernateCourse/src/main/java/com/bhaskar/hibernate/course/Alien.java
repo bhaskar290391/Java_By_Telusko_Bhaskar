@@ -1,9 +1,6 @@
 package com.bhaskar.hibernate.course;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "alien_table")
@@ -16,8 +13,19 @@ public class Alien {
     @Column(name = "alien_name")
     private String aname;
 
+    @Transient
     @Column(name = "alien_tech")
     private String tech;
+
+    private Laptop laptop;
+
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
 
     public int getAid() {
         return aid;
@@ -49,6 +57,7 @@ public class Alien {
                 "aid=" + aid +
                 ", aname='" + aname + '\'' +
                 ", tech='" + tech + '\'' +
+                ", laptop=" + laptop +
                 '}';
     }
 }

@@ -9,10 +9,16 @@ import org.hibernate.cfg.Configuration;
 public class AlienMain {
     public static void main() {
 
+        Laptop laptop =new Laptop();
+        laptop.setRam(16);
+        laptop.setBrand("Asus");
+        laptop.setModel("Rog");
+
         Alien alien=new Alien();
         alien.setAid(29);
         alien.setAname("Bhaskar");
         alien.setTech("java");
+        alien.setLaptop(laptop);
 
         SessionFactory sessionFactory=new Configuration()
                 .addAnnotatedClass(Alien.class)
