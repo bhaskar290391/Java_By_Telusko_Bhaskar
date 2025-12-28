@@ -3,6 +3,7 @@ package com.bhaskar.practise.jdbctemplate.JDBCTemplate.dao;
 import com.bhaskar.practise.jdbctemplate.JDBCTemplate.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -26,7 +27,17 @@ public class StudentRepo {
 
 
     public List<Student> findAll() {
-        List<Student> students=new ArrayList<>();
-        return students;
+
+        String query="select * from student";
+        RowMapper<Student> rowMapper= (rs,rowNumber)->{
+            Student s=new Student();
+            s.setRollNo(rs.getInt("rollNo"));
+            s.setName(rs.getString("name"));
+            s.setMarks(rs.getInt("marks"));
+
+            return s;
+        };
+        return template.query(query,rowMapper);
+
     }
 }
