@@ -20,7 +20,8 @@ public class Alien {
     private String tech;
 
     //@OneToOne()
-    @OneToMany(mappedBy = "alien")
+    //@OneToMany(mappedBy = "alien")
+    @ManyToMany
     private List<Laptop> laptop;
 
     public List<Laptop> getLaptop() {

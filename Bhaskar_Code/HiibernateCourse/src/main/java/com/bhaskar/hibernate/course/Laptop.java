@@ -2,6 +2,8 @@ package com.bhaskar.hibernate.course;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 //@Embeddable
 @Entity
 @Table(name="laptop")
@@ -13,14 +15,25 @@ public class Laptop {
     private String brand;
     private int ram;
 
-    @ManyToOne
-    private Alien alien;
+    //@ManyToOne
+    @ManyToMany(mappedBy = "laptop")
+    private List<Alien> alien;
 
-    public Alien getAlien() {
+//    For Many to One
+//    public Alien getAlien() {
+//        return alien;
+//    }
+//
+//    public void setAlien(Alien alien) {
+//        this.alien = alien;
+//    }
+
+
+    public List<Alien> getAlien() {
         return alien;
     }
 
-    public void setAlien(Alien alien) {
+    public void setAlien(List<Alien> alien) {
         this.alien = alien;
     }
 

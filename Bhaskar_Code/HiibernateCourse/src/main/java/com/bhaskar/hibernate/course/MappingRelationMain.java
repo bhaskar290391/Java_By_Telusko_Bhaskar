@@ -23,16 +23,36 @@ public class MappingRelationMain {
         laptop1.setBrand("Dell");
         laptop1.setModel("XPS");
 
+        Laptop laptop3 =new Laptop();
+        laptop3.setLid(3);
+        laptop3.setRam(16);
+        laptop3.setBrand("Apple");
+        laptop3.setModel("MacBook Pro");
+
 
 
         Alien alien=new Alien();
         alien.setAid(101);
         alien.setAname("Bhaskar");
         alien.setTech("java");
-        alien.setLaptop(Arrays.asList(laptop,laptop1));
 
-        laptop1.setAlien(alien);
-        laptop.setAlien(alien);
+        Alien alien1=new Alien();
+        alien1.setAid(102);
+        alien1.setAname("Kanishk");
+        alien1.setTech("Python");
+
+        Alien alien2=new Alien();
+        alien2.setAid(103);
+        alien2.setAname("Sammy");
+        alien2.setTech("AI");
+
+        alien.setLaptop(Arrays.asList(laptop,laptop1));
+        alien1.setLaptop(Arrays.asList(laptop1,laptop3));
+        alien2.setLaptop(Arrays.asList(laptop3));
+
+        laptop1.setAlien(Arrays.asList(alien,alien1));
+        laptop.setAlien(Arrays.asList(alien));
+        laptop3.setAlien(Arrays.asList(alien1,alien2)  );
 
 
 
@@ -48,12 +68,15 @@ public class MappingRelationMain {
 
         session.persist(laptop);
         session.persist(laptop1);
+        session.persist(laptop3);
         session.persist(alien);
+        session.persist(alien1);
+        session.persist(alien2);
 
         transaction.commit();
         session.close();
         sessionFactory.close();
-        System.out.println(alien);
+
     }
 }
 
