@@ -20,10 +20,24 @@ public class HQLDemo {
                 .buildSessionFactory();
 
         Session session= sessionFactory.openSession();
+        String brand="Apple";
+        //Query query=session.createQuery("from LaptopData where  ram =16");
+        //Query query=session.createQuery("from LaptopData where brand= ?1");
+        //query.setParameter(1,brand);
 
-        Query query=session.createQuery("from LaptopData where  ram =16");
-        List<LaptopData> laptops=query.getResultList();
-        System.out.println(laptops);
+        Query query=session.createQuery("select brand, model from LaptopData where  ram =?1");
+        query.setParameter(1,16);
+
+
+        //List<LaptopData> laptops=query.getResultList();
+        //List<String> laptops=query.getResultList();
+
+        List<Object[]> laptops=query.getResultList();
+
+        for(Object[] laptop:laptops){
+            System.out.println((String)laptop[0]+ " "+(String)laptop[1]);
+        }
+
         session.close();
         sessionFactory.close();
 
