@@ -2,6 +2,8 @@ package com.bhaskar.hibernate.course;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "alien_table")
 public class Alien {
@@ -13,17 +15,19 @@ public class Alien {
     @Column(name = "alien_name")
     private String aname;
 
-    @Transient
+    //@Transient
     @Column(name = "alien_tech")
     private String tech;
 
-    private Laptop laptop;
+    //@OneToOne()
+    @OneToMany(mappedBy = "alien")
+    private List<Laptop> laptop;
 
-    public Laptop getLaptop() {
+    public List<Laptop> getLaptop() {
         return laptop;
     }
 
-    public void setLaptop(Laptop laptop) {
+    public void setLaptop(List<Laptop> laptop) {
         this.laptop = laptop;
     }
 

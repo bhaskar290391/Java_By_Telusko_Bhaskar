@@ -1,15 +1,35 @@
 package com.bhaskar.hibernate.course;
 
-import jakarta.persistence.Embeddable;
+import jakarta.persistence.*;
 
-@Embeddable
+//@Embeddable
+@Entity
+@Table(name="laptop")
 public class Laptop {
 
+    @Id
+    private int lid;
     private String model;
     private String brand;
     private int ram;
 
-    Laptop(){
+    @ManyToOne
+    private Alien alien;
+
+    public Alien getAlien() {
+        return alien;
+    }
+
+    public void setAlien(Alien alien) {
+        this.alien = alien;
+    }
+
+    public int getLid() {
+        return lid;
+    }
+
+    public void setLid(int lid) {
+        this.lid = lid;
     }
 
     public String getModel() {
@@ -39,7 +59,8 @@ public class Laptop {
     @Override
     public String toString() {
         return "Laptop{" +
-                "model='" + model + '\'' +
+                "lid=" + lid +
+                ", model='" + model + '\'' +
                 ", brand='" + brand + '\'' +
                 ", ram=" + ram +
                 '}';
