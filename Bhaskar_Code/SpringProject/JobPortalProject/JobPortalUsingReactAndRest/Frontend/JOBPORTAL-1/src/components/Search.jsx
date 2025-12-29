@@ -15,7 +15,7 @@ const Search = () => {
 
     useEffect(() => {
         const fetchInitialPosts = async () => {
-            const response = await axios.get(`http://localhost:8000/posts`);
+            const response = await axios.get(`http://localhost:8080/jobPosts`);
             console.log(response);
             setPost(response.data);
         }
@@ -57,7 +57,7 @@ const Search = () => {
                 </Typography>
 
                 <Typography gutterBottom  variant="body">Skills : </Typography>
-                {p.postTechStack.map((s, i) => {
+                {p.postTechStack && p.postTechStack.map((s, i) => {
                   return (
                     <Typography variant="body" gutterBottom key={i}>
                       {s} .

@@ -38,8 +38,12 @@ public class JobRepository {
         System.out.println(jobs);
     }
 
-    public List<JobPost> getJobsPost(){
+    public List<JobPost> getJobsPosts(){
 
         return jobs;
+    }
+
+    public JobPost getJobsPost(int postId) {
+        return  jobs.stream().filter(job-> job.getPostId()==postId).findFirst().orElse(null);
     }
 }
