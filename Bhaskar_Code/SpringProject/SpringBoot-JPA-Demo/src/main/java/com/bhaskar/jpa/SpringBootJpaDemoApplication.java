@@ -13,6 +13,7 @@ public class SpringBootJpaDemoApplication {
 		ApplicationContext context=SpringApplication.run(SpringBootJpaDemoApplication.class, args);
 		StudentRepository repo=context.getBean(StudentRepository.class);
 
+		/*
 		Student s=new Student();
 		s.setStudentId(29);
 		s.setStudentMarks(55);
@@ -34,6 +35,10 @@ public class SpringBootJpaDemoApplication {
 		repo.save(s1);
 		repo.save(s2);
 
+
+		 */
+
+		System.out.println(repo.findAll());
 	}
 
 }
