@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59d31ad6-cf6f-4b14-89a0-74a2445aae95" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhaskar/practise/jdbctemplate/JDBCTemplate/JdbcTemplateApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhaskar/practise/jdbctemplate/JDBCTemplate/dao/StudentRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhaskar/practise/jdbctemplate/JDBCTemplate/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhaskar/practise/jdbctemplate/JDBCTemplate/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bhaskar/practise/jdbctemplate/JDBCTemplate/JdbcTemplateApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/.idea/backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/java/com/bhaskar/job/JobPortalApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/java/com/bhaskar/job/JobRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/java/com/bhaskar/job/JobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/java/com/bhaskar/job/controllers/JobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/java/com/bhaskar/job/model/JobPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/webapp/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/webapp/style1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/webapp/views/addjob.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/webapp/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/webapp/views/success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/main/webapp/views/viewalljobs.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalBySpringBootAndJSP/backend/JobPortal/src/test/java/com/bhaskar/job/JobPortalApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/src/main/java/com/bhaskar/rest/job/JobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/src/main/java/com/bhaskar/rest/job/JobPortalRestApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/src/main/java/com/bhaskar/rest/job/model/JobPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/src/main/java/com/bhaskar/rest/job/repo/JobRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/src/main/java/com/bhaskar/rest/job/service/JobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Backend/Job-Portal-Rest/src/test/java/com/bhaskar/rest/job/JobPortalRestApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/components/Search.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JobPortalProject/JobPortalUsingReactAndRest/Frontend/JOBPORTAL-1/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="37TiOj7sWaczZ9dgLf7ejMV1zBY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.JdbcTemplateApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Bhaskar_Learning_and_Development/Udemy/Java_By_Telusko_Bhaskar/Bhaskar_Code/SpringProject/JDBCTemplate&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bhaskar.practise.jdbctemplate.JDBCTemplate.dao" />
+      <recent name="com.bhaskar.practise.jdbctemplate.JDBCTemplate.service" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59d31ad6-cf6f-4b14-89a0-74a2445aae95" name="Changes" comment="" />
+      <created>1766933431680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766933431680</updated>
+    </task>
+    <servers />
+  </component>
+</project>
