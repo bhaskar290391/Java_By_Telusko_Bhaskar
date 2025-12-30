@@ -46,6 +46,12 @@ public class SpringBootJpaDemoApplication {
 		System.out.println(student.orElse(new Student()));
 
 
+		System.out.println(repo.findByStudentName("Bhaskar"));
+
+		System.out.println(repo.findByStudentMarks(65));
+
+		System.out.println(repo.findByStudentMarksGreaterThan(60));;
+
 	}
 
 }
