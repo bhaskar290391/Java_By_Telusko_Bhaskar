@@ -50,7 +50,17 @@ public class SpringBootJpaDemoApplication {
 
 		System.out.println(repo.findByStudentMarks(65));
 
-		System.out.println(repo.findByStudentMarksGreaterThan(60));;
+		System.out.println(repo.findByStudentMarksGreaterThan(60));
+
+
+		Student s2=new Student();
+		s2.setStudentId(20);
+		s2.setStudentMarks(75);
+		s2.setStudentName("Samyuktha Mudaliyar");
+
+	//		repo.save(s2);
+
+		repo.delete(s2);
 
 	}
 
