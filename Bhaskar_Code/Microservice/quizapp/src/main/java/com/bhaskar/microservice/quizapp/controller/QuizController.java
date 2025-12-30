@@ -1,5 +1,6 @@
 package com.bhaskar.microservice.quizapp.controller;
 
+import com.bhaskar.microservice.quizapp.model.QuestionResponse;
 import com.bhaskar.microservice.quizapp.model.QuestionWrapper;
 import com.bhaskar.microservice.quizapp.service.QuizService;
 import org.apache.coyote.Response;
@@ -25,8 +26,12 @@ public class QuizController {
 
     @GetMapping("/get/{quizId}")
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestion(@PathVariable int quizId){
-
         return service.getQuizQuestions(quizId);
+    }
+
+    @PostMapping("/calculateResult/{quizId}")
+    public ResponseEntity<Integer> calculateQuizResult(@PathVariable int quizId, @RequestBody List<QuestionResponse> response){
+        return  service.calculteQuizResult(quizId,response);
     }
 
 

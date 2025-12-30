@@ -4,6 +4,7 @@ import com.bhaskar.microservice.quizapp.dao.QuestionDao;
 import com.bhaskar.microservice.quizapp.dao.QuizRepository;
 import com.bhaskar.microservice.quizapp.entity.Question;
 import com.bhaskar.microservice.quizapp.entity.Quiz;
+import com.bhaskar.microservice.quizapp.model.QuestionResponse;
 import com.bhaskar.microservice.quizapp.model.QuestionWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -42,5 +43,20 @@ public class QuizService {
       }).toList();
 
      return new ResponseEntity<>(data,HttpStatus.OK);
+    }
+
+    public ResponseEntity<Integer> calculteQuizResult(int quizId, List<QuestionResponse> response) {
+
+        Quiz  quiz =quizRepository.findById(quizId).get();
+        List<Question> questions=quiz.getQuestions();
+        int right=0;
+        int i=0;
+        for(QuestionResponse q: response){
+            if(q.getResponse().equals(questions.get(i).getRightAnswer())){
+                right++;
+            }
+            i++;
+        }
+        return  new ResponseEntity<>(right,HttpStatus.OK);
     }
 }
