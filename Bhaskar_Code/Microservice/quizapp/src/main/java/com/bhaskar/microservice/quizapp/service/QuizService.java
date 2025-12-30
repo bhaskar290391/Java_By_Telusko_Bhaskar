@@ -4,6 +4,7 @@ import com.bhaskar.microservice.quizapp.dao.QuestionDao;
 import com.bhaskar.microservice.quizapp.dao.QuizRepository;
 import com.bhaskar.microservice.quizapp.entity.Question;
 import com.bhaskar.microservice.quizapp.entity.Quiz;
+import com.bhaskar.microservice.quizapp.model.QuestionWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,7 @@ import java.util.List;
 public class QuizService {
 
     @Autowired
-    private QuizRepository repository ;
+    private QuizRepository quizRepository ;
 
     @Autowired
     private QuestionDao questionDao ;
@@ -26,7 +27,20 @@ public class QuizService {
         Quiz quiz= new Quiz();
         quiz.setQuizName("Java");
         quiz.setQuestions(question);
-        repository.save(quiz);
+        quizRepository.save(quiz);
         return new ResponseEntity<>("Success", HttpStatus.OK);
+    }
+
+    public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(int quizId) {
+
+      Quiz  quiz =quizRepository.findById(quizId).get();
+      List<Question> questions=quiz.getQuestions();
+
+     List<QuestionWrapper> data= questions.stream().map( q ->{
+          QuestionWrapper questionWrapper = new QuestionWrapper(q.getId(), q.getQuestionTitle(),q.getOption1(),q.getOption2(),q.getOption3(),q.getOption4());
+          return  questionWrapper;
+      }).toList();
+
+     return new ResponseEntity<>(data,HttpStatus.OK);
     }
 }
