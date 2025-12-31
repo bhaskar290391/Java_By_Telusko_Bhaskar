@@ -35,41 +35,20 @@ public class QuizService {
     }
 
 
-    /*
 
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(int quizId) {
-//
-//      Quiz  quiz =quizRepository.findById(quizId).get();
-//      List<Question> questions=quiz.getQuestions();
-//
-//     List<QuestionWrapper> data= questions.stream().map( q ->{
-//          QuestionWrapper questionWrapper = new QuestionWrapper(q.getId(), q.getQuestionTitle(),q.getOption1(),q.getOption2(),q.getOption3(),q.getOption4());
-//          return  questionWrapper;
-//      }).toList();
-//
-//     return new ResponseEntity<>(data,HttpStatus.OK);
 
-        return new ResponseEntity<>(null,HttpStatus.OK);
-
+      Quiz  quiz =quizRepository.findById(quizId).get();
+      List<Integer> questionIds=quiz.getQuestions();
+       ResponseEntity<List<QuestionWrapper>> data=clientService.getQuestions(questionIds);
+       return data;
     }
 
     public ResponseEntity<Integer> calculteQuizResult(int quizId, List<QuestionResponse> response) {
-
-//        Quiz  quiz =quizRepository.findById(quizId).get();
-//        List<Question> questions=quiz.getQuestions();
-//        int right=0;
-//        int i=0;
-//        for(QuestionResponse q: response){
-//            if(q.getResponse().equals(questions.get(i).getRightAnswer())){
-//                right++;
-//            }
-//            i++;
-//        }
-//        return  new ResponseEntity<>(right,HttpStatus.OK);
-
-        return new ResponseEntity<>(0,HttpStatus.OK);
+        ResponseEntity<Integer> data =clientService.calculateScores(response);
+        return data;
     }
 
 
-     */
+
 }

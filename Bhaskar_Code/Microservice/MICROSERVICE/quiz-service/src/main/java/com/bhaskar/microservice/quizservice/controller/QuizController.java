@@ -2,10 +2,14 @@ package com.bhaskar.microservice.quizservice.controller;
 
 
 import com.bhaskar.microservice.quizservice.dto.QuizDTO;
+import com.bhaskar.microservice.quizservice.model.QuestionResponse;
+import com.bhaskar.microservice.quizservice.model.QuestionWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.bhaskar.microservice.quizservice.service.QuizService;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("quiz")
@@ -20,7 +24,6 @@ public class QuizController {
         return  service.createQuiz(quizDTO.getCategory(),quizDTO.getNumQ(),quizDTO.getTitle());
     }
 
-    /*
     @GetMapping("/get/{quizId}")
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestion(@PathVariable int quizId){
         return service.getQuizQuestions(quizId);
@@ -31,5 +34,4 @@ public class QuizController {
         return  service.calculteQuizResult(quizId,response);
     }
 
-*/
 }
