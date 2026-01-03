@@ -40,11 +40,36 @@ public class ProductController {
     @PostMapping("/product")
     public ResponseEntity<Product> createProduct(@RequestPart Product product, @RequestPart MultipartFile imageFile){
         try{
-            Product data=service.saveProduct(product,imageFile);
+            Product data=service.saveorUpdateProduct(product,imageFile);
             return new ResponseEntity<>(data,HttpStatus.CREATED);
         }catch (Exception e){
             return  new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
+
+    }
+
+    @PutMapping("/product/{id}")
+    public ResponseEntity<String> createProduct(@PathVariable int id,@RequestPart Product product, @RequestPart MultipartFile imageFile){
+        try{
+            Product data=service.saveorUpdateProduct(product,imageFile);
+            return new ResponseEntity<>("Updated", HttpStatus.OK);
+        }catch (Exception e){
+            return  new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @DeleteMapping("/product/{id}")
+        public ResponseEntity<String> deleteProduct(@PathVariable int id){
+
+        Product product =service.getProductById(id);
+
+        if(product !=null){
+            service.deleteProduct(id);
+            return new ResponseEntity<>("Deleted", HttpStatus.OK);
+        }else{
+            return  new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
 
     }
 
@@ -58,6 +83,13 @@ public class ProductController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
+    }
+
+
+    @GetMapping("products/search")
+    public ResponseEntity<List<Product>> getProductsByName(@RequestParam String keyword){
+
+        return  new ResponseEntity<>(service.searchProduct(keyword),HttpStatus.OK);
     }
 
 
