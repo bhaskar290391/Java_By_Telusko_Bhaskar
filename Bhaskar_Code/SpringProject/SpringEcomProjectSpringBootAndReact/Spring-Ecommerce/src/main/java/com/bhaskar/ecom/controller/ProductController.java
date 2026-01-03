@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -35,5 +36,29 @@ public class ProductController {
         }
 
     }
+
+    @PostMapping("/product")
+    public ResponseEntity<Product> createProduct(@RequestPart Product product, @RequestPart MultipartFile imageFile){
+        try{
+            Product data=service.saveProduct(product,imageFile);
+            return new ResponseEntity<>(data,HttpStatus.CREATED);
+        }catch (Exception e){
+            return  new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+
+    }
+
+    @GetMapping("/product/{productId}/image")
+    public ResponseEntity<byte[]> getProductImage(@PathVariable int productId){
+
+        Product product =service.getProductById(productId);
+        if(product.getId() >-1){
+            return new ResponseEntity<>(product.getImage(),HttpStatus.OK) ;
+        }else{
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+    }
+
 
 }
